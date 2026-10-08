@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  color: #29382f;
+  background-color: #f5f1e8;
+}
+
+.letter-space {
+  letter-spacing: .12em;
+}
+
+.hero {
+  min-height: 88vh;
+  color: #fffaf2;
+  background:
+    linear-gradient(90deg, rgba(28, 43, 35, .78) 0%, rgba(28, 43, 35, .5) 48%, rgba(28, 43, 35, .08) 100%),
+    url("https://images.unsplash.com/photo-1712554009719-68e5aa9d6ba3?auto=format&fit=crop&w=2000&q=85") center / cover;
+}
+
+.hero .text-danger {
+  color: #f3c8b6 !important;
+}
+
+.sakura-tint {
+  background: linear-gradient(135deg, #f1eee3, #e8eee7);
+}
+
+.icon-circle {
+  display: grid;
+  width: 4rem;
+  height: 4rem;
+  place-items: center;
+  border-radius: 50%;
+  background: #e9eee7;
+}
+
+.feature-card {
+  color: #29382f;
+  background: #fbf8f1;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(38, 56, 45, .14) !important;
+}
+
+.gallery-photo {
+  height: 280px;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.gallery-photo:hover {
+  transform: scale(1.02);
+}
+
+.carousel-photo {
+  height: clamp(280px, 55vw, 600px);
+  object-fit: cover;
+}
+
+.quote-block {
+  color: #f7f1e6;
+  background: #2d4035;
+}
+
+.quote-block .text-danger {
+  color: #e9b7a2 !important;
+}
+
+.quote-block .text-secondary {
+  color: rgba(247, 241, 230, .72) !important;
+}
+
+.footer-sakura {
+  background: #2d4035;
+}
+
+.footer-sakura .text-dark,
+.footer-sakura .text-secondary,
+.footer-sakura .link-dark,
+.footer-sakura .navbar-brand {
+  color: #f7f1e6 !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+  }
+}
